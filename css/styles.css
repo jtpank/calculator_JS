@@ -1,0 +1,88 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: wheat;
+}
+
+.calculator-block {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.screen {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.screen .current {
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.screen .previous {
+    color: white;
+    font-size: 2rem;
+}
+
+.op-button {
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+}
+    .op-button:hover {
+        background-color: powderblue;
+    }
+
+.number-button {
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+
+}
+    .number-button:hover {
+        background-color: aquamarine;
+    }
+
+.clearButton {
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+    grid-column: span 2;
+}
+    .clearButton:hover {
+        background-color: powderblue;
+    }
+
+
+.eqButton {
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+    grid-column: span 2;
+}
+    .eqButton:hover {
+        background-color: powderblue;
+    }

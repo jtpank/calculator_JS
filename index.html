@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<!--python3 -m http.server [PORT]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    
+</head>
+
+<body>
+    <div class="calculator-block">
+        <div class="screen">
+            <div previous-op class="previous">
+            </div>
+            <div current-op class="current">
+            </div>
+        </div>
+        <button op-clear-all class="clearButton">AC</button>
+        <button op-del class="op-button">DEL</button>
+        <button op-data class="op-button">*</button>
+        <button num-data class="number-button">1</button>
+        <button num-data class="number-button">2</button>
+        <button num-data class="number-button">3</button>
+        <button op-data class="op-button">/</button>
+        <button num-data class="number-button">4</button>
+        <button num-data class="number-button">5</button>
+        <button num-data class="number-button">6</button>
+        <button op-data class="op-button">-</button>
+        <button num-data class="number-button">7</button>
+        <button num-data class="number-button">8</button>
+        <button num-data class="number-button">9</button>
+        <button op-data class="op-button">+</button>
+        <button num-data class="number-button">.</button>
+        <button num-data class="number-button">0</button>
+        <button op-calculate class="eqButton">=</button>
+    </div>
+    <!--Best practice to add at end of body-->
+    <script src="js/script.js"></script>
+</body>
+</html>
